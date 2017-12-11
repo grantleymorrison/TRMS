@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="resources/css/MyCustomCSS.css">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+         $(function() {
+            $( "#tabs-5" ).tabs({
+               heightStyle:"auto",
+               collapsible:false
+            });
+         });
+      </script>
+
+<style>
+#tabs-5 {
+	font-size: 14px;
+}
+
+.ui-widget-header {
+	background: #b9cd6d;
+	border: 1px solid #b9cd6d;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+	<div id="tabs-5" class="align">
+		<ul>
+			<li><a href="#tabs-6">Reimbursements</a></li>
+			<li><a href="#tabs-8">Reimbursement Registration</a></li>
+		</ul>
+		<div id="tabs-6" class="well">
+			<form action="Reimbursements">
+				<ul style="list-style-type: none;">
+					<li><div class="form-group">
+							<label>Employee ID:&nbsp;</label><input type="number" name="emp_id"
+								id="eid">
+							<button type='submit' class='btn btn-primary btn-sm'>Submit</button>
+						</div></li>
+				</ul>
+			</form>
+		</div>
+		<div id="tabs-8" class="well style='height: auto';">
+			<form action="reimbursement.html">
+				<ul style="list-style-type: none;">
+					<li><button type='submit'
+							class='btn center-block btn-primary btn-sm'>Reimbursements</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reimbursement Registration</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="TRMS/src/main/webapp/resources/javascript/main.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="resources/css/MyCustomCSS.css">
+</head>
+<body>
+	<div class="well darkfont alignsmall">
+		<h1>Register a Reimbursement Request</h1>
+		<form method="post" action="ReimbursementRegistration"
+			name="reimbursementregistration" class="form-group">
+			<ul style="list-style-type: none">
+				<li>EMPLOYEE ID</li>
+				<li><input type="number" name="emp_id" required></li>
+				<li>DEPARTMENT NAME</li>
+				<li><select name="dept_name" required>
+						<option value="HR">Human Resources</option>
+						<option value="Management">Management</option>
+				</select></li>
+				<li>COST</li>
+				<li><input type="number" name="cost" required></li>
+				<li>EVENT TYPE</li>
+				<li><select name="event_type">
+						<option value="uni">University Course</option>
+						<option value="sem">Seminars</option>
+						<option value="certprep">Certification Prep Course</option>
+						<option value="cert">Certification</option>
+						<option value="train">Technical Training</option>
+						<option value="other">Other</option>
+				</select></li>
+				<li>DATE</li>
+				<li><input type="date" name="date" required></li>
+				<li>TIME OFF START DATE</li>
+				<li><input type="date" name="startdate"></li>
+				<li>TIME OFF END DATE</li>
+				<li><input type="date" name="enddate"></li>
+				<li>LOCATION</li>
+				<li><input type="text" name="location" required></li>
+				<li><input type="file" name=file value="upload"></li>
+				<li><div class="btn-group btn-group-sm">
+						<div class="btn-group">
+							<button type='reset'
+								class='btn center-block btn-primary'>Reset</button>
+						</div>
+						<div class="btn-group">
+							<button type='submit'
+								class='btn center-block btn-primary'>Submit</button>
+						</div>
+					</div></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

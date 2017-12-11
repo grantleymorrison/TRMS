@@ -1,0 +1,33 @@
+body {
+	background-color: #333333;
+	color: #eeeeee;
+	margin: auto;
+    margin-top: 0px auto;
+    margin-right: 0px auto;
+    margin-bottom: 0px auto;
+    margin-left: 0px auto;
+}
+select {
+	color: #000000;
+}
+.darkfont {
+	color: #333333;
+}
+.align {
+	margin: auto;
+    width: 45%;
+    border: 3px solid black;
+    padding: 10px;
+}
+.alignsmall {
+	margin: auto;
+    width: 25%;
+    border: 3px solid black;
+    padding: 10px;
+}
+.cleanalign {
+	margin: auto;
+    width: 25%;
+    top: 25%
+    padding: 10px;
+}

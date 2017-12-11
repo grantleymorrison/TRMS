@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="resources/css/MyCustomCSS.css">
+<link
+	href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+	rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<meta charset="ISO-8859-1">
+<title>Employee Registration</title>
+</head>
+<body>
+	<div class="well darkfont alignsmall">
+		<h1>Register a User</h1>
+		<form method="post" action="UserRegistration" name="registration">
+			<ul style="list-style-type: none">
+				<li>EMPLOYEE ID</li>
+				<li><input type="number" name="eid" required></li>
+				<li>SUPERVISOR ID</li>
+				<li><input type="number" name="reportsto" required></li>
+				<li>DEPARTMENT NAME</li>
+				<li><input type="text" name="dept_name" required></li>
+				<li>RANK</li>
+				<li><input type="number" name="rank" required></li>
+				<li>FIRST NAME</li>
+				<li><input type="text" name="first_name" required></li>
+				<li>LAST NAME</li>
+				<li><input type="text" name="last_name" required></li>
+				<li>ADDRESS</li>
+				<li><input type="text" name="address" required></li>
+				<li><div class="btn-group btn-group-sm">
+						<div class="btn-group">
+							<button type='reset' class='btn center-block btn-primary'>Reset</button>
+						</div>
+						<div class="btn-group">
+							<button type='submit' class='btn center-block btn-primary'>Submit</button>
+						</div>
+					</div></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
